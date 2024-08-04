@@ -4,7 +4,7 @@
  Author      : kar1o
  Version     : 1.0
  Copyright   : 2023
- Description : Simple words program written in C
+ Description : Simple program written in C using pointers and memory allocations
  ============================================================================
  */
 
