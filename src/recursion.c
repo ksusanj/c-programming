@@ -3,8 +3,8 @@
  Name        : recursion.c
  Author      : kar1o
  Version     : 1.0
- Copyright   : 2023
- Description : Simple program written in C
+ Copyright   : © 2024
+ Description : Simple program written in C - math
  ============================================================================
  */
 
@@ -29,8 +29,8 @@ int factorial(int n){
 
 int main(void) {
 
-    printf ("%d\n", fibonacci(6));
-    printf ("%d\n", factorial(5));
+    printf ("Fibonnaci(6): %d\n", fibonacci(6));
+    printf ("Factorial(5): %d\n", factorial(5));
 
 	return EXIT_SUCCESS;
 }

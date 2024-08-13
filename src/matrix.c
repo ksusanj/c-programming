@@ -3,8 +3,8 @@
  Name        : matrix.c
  Author      : kar1o
  Version     : 1.0
- Copyright   : © 2023
- Description : Simple matrix program written in C
+ Copyright   : © 2024
+ Description : Simple program written in C - 2D arrays
  ============================================================================
  */
 
@@ -45,9 +45,7 @@ int main() {
 			for (i = 0; i < r; i++) {
 				for (j = 0; j < c; j++) {
 					matrix1[i][j] = rand() % 10;
-					printf("%3d", matrix1[i][j]);
 				}
-				printf("\r");
 			}
 		} else if (fillChoice == 2) {
 			for (i = 0; i < r; i++) {
@@ -56,14 +54,9 @@ int main() {
 					scanf("%d", &matrix1[i][j]);
 				}
 			}
-
-			for (i = 0; i < r; i++) {
-				for (j = 0; j < c; j++) {
-					printf("%3d", matrix1[i][j]);
-				}
-				printf("\r");
-			}
 		}
+
+		printMatrix(&matrix1[0][0], r, c);
 	} while (fillChoice != 1 && fillChoice != 2);
 
 	// reset fillChoice
@@ -83,9 +76,7 @@ int main() {
 			for (i = 0; i < r; i++) {
 				for (j = 0; j < c; j++) {
 					matrix2[i][j] = rand() % 10;
-					printf("%3d", matrix2[i][j]);
 				}
-				printf("\r");
 			}
 		} else if (fillChoice == 2) {
 			for (i = 0; i < r; i++) {
@@ -94,14 +85,9 @@ int main() {
 					scanf("%d", &matrix2[i][j]);
 				}
 			}
-
-			for (i = 0; i < r; i++) {
-				for (j = 0; j < c; j++) {
-					printf("%3d", matrix2[i][j]);
-				}
-				printf("\r");
-			}
 		}
+
+		printMatrix(&matrix2[0][0], r, c);
 	} while (fillChoice != 1 && fillChoice != 2);
 
 	// Operations
